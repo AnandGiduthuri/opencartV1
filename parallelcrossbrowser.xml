@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests">
+	<groups>
+		<run>
+			<include name="sanity" />
+			<include name="master" />
+
+		</run>
+	</groups>
+
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager" />
+	</listeners>
+
+
+	<test name="edgeTest">
+		<parameter name="browser" value="edge" />
+		<parameter name="os" value="Windows" />
+		<classes>
+			<class name="testCases.AccountCreationTest" />
+		</classes>
+	</test>
+
+
+	<test name="chromeTest">
+		<parameter name="browser" value="chrome" />
+		<parameter name="os" value="Windows" />
+		<classes>
+			<class name="testCases.AccountCreationTest" />
+			<class name="testCases.LoginwithPropertiesTest"/>
+		</classes>
+	</test>
+
+</suite> <!--
+Suite -->

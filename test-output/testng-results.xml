@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-22T10:44:38 SGT" name="Suite" finished-at="2024-10-22T10:44:52 SGT" duration-ms="14196">
+    <groups>
+      <group name="regression">
+        <method signature="LoginwithPropertiesTest.loginTest()[pri:0, instance:testCases.LoginwithPropertiesTest@28d6290]" name="loginTest" class="testCases.LoginwithPropertiesTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="AccountCreationTest.accountRegiTest()[pri:0, instance:testCases.AccountCreationTest@73ff4fae]" name="accountRegiTest" class="testCases.AccountCreationTest"/>
+        <method signature="AccountCreationTest.accountRegiTest()[pri:0, instance:testCases.AccountCreationTest@376a312c]" name="accountRegiTest" class="testCases.AccountCreationTest"/>
+        <method signature="LoginwithPropertiesTest.loginTest()[pri:0, instance:testCases.LoginwithPropertiesTest@28d6290]" name="loginTest" class="testCases.LoginwithPropertiesTest"/>
+      </group> <!-- sanity -->
+      <group name="master">
+        <method signature="AccountCreationTest.accountRegiTest()[pri:0, instance:testCases.AccountCreationTest@73ff4fae]" name="accountRegiTest" class="testCases.AccountCreationTest"/>
+        <method signature="AccountCreationTest.accountRegiTest()[pri:0, instance:testCases.AccountCreationTest@376a312c]" name="accountRegiTest" class="testCases.AccountCreationTest"/>
+        <method signature="LoginwithPropertiesTest.loginTest()[pri:0, instance:testCases.LoginwithPropertiesTest@28d6290]" name="loginTest" class="testCases.LoginwithPropertiesTest"/>
+      </group> <!-- master -->
+    </groups>
+    <test started-at="2024-10-22T10:44:38 SGT" name="edgeTest" finished-at="2024-10-22T10:44:50 SGT" duration-ms="11686">
+      <class name="testCases.AccountCreationTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountCreationTest@73ff4fae]" started-at="2024-10-22T10:44:38 SGT" name="setup" finished-at="2024-10-22T10:44:44 SGT" duration-ms="5611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="accountRegiTest()[pri:0, instance:testCases.AccountCreationTest@73ff4fae]" started-at="2024-10-22T10:44:44 SGT" name="accountRegiTest" finished-at="2024-10-22T10:44:48 SGT" duration-ms="4596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountRegiTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.AccountCreationTest@73ff4fae]" started-at="2024-10-22T10:44:48 SGT" name="tearDown" finished-at="2024-10-22T10:44:50 SGT" duration-ms="1339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.AccountCreationTest -->
+    </test> <!-- edgeTest -->
+    <test started-at="2024-10-22T10:44:38 SGT" name="chromeTest" finished-at="2024-10-22T10:44:52 SGT" duration-ms="14196">
+      <class name="testCases.LoginwithPropertiesTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginwithPropertiesTest@28d6290]" started-at="2024-10-22T10:44:47 SGT" name="setup" finished-at="2024-10-22T10:44:50 SGT" duration-ms="3187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:testCases.LoginwithPropertiesTest@28d6290]" started-at="2024-10-22T10:44:50 SGT" name="loginTest" finished-at="2024-10-22T10:44:52 SGT" duration-ms="2116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginwithPropertiesTest@28d6290]" started-at="2024-10-22T10:44:52 SGT" name="tearDown" finished-at="2024-10-22T10:44:52 SGT" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.LoginwithPropertiesTest -->
+      <class name="testCases.AccountCreationTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountCreationTest@376a312c]" started-at="2024-10-22T10:44:38 SGT" name="setup" finished-at="2024-10-22T10:44:42 SGT" duration-ms="4078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="accountRegiTest()[pri:0, instance:testCases.AccountCreationTest@376a312c]" started-at="2024-10-22T10:44:42 SGT" name="accountRegiTest" finished-at="2024-10-22T10:44:46 SGT" duration-ms="4104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountRegiTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.AccountCreationTest@376a312c]" started-at="2024-10-22T10:44:46 SGT" name="tearDown" finished-at="2024-10-22T10:44:47 SGT" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.AccountCreationTest -->
+    </test> <!-- chromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
