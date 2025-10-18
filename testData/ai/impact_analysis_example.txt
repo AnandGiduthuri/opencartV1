@@ -1,0 +1,47 @@
+# Impact Analysis File
+# This file is used by the AI Test Scenario Generator to determine test priorities
+# Format:
+# MODULE: <module name>
+# IMPACT: CRITICAL|HIGH|MEDIUM|LOW
+# COMPONENTS: <comma-separated list of affected components>
+# DESCRIPTION: <description of the change>
+
+MODULE: User Authentication
+IMPACT: CRITICAL
+COMPONENTS: LoginPage, SessionManager, SecurityFilter
+DESCRIPTION: Updated authentication mechanism to use OAuth2.0, replacing legacy session-based auth. This is a core functionality change affecting all user login flows.
+
+MODULE: Account Registration
+IMPACT: CRITICAL
+COMPONENTS: AccountRegistration, EmailVerification, DatabaseManager
+DESCRIPTION: Fixed critical bug in email verification process that was allowing unverified users to access the system.
+
+MODULE: Shopping Cart
+IMPACT: HIGH
+COMPONENTS: CartManager, PriceCalculator, InventoryService
+DESCRIPTION: Enhanced cart functionality to support bulk discounts and promotional codes. Significant changes to pricing logic.
+
+MODULE: Product Search
+IMPACT: HIGH
+COMPONENTS: SearchEngine, ProductCatalog, FilterManager
+DESCRIPTION: Improved search algorithm with AI-based recommendations. Major performance optimization.
+
+MODULE: Order Processing
+IMPACT: MEDIUM
+COMPONENTS: OrderManager, PaymentGateway, NotificationService
+DESCRIPTION: Added support for new payment methods (PayPal, Stripe). Integration with third-party services.
+
+MODULE: User Profile
+IMPACT: MEDIUM
+COMPONENTS: ProfilePage, UserSettings, PreferenceManager
+DESCRIPTION: Added ability to customize dashboard and notification preferences. UI/UX improvements.
+
+MODULE: Admin Dashboard
+IMPACT: LOW
+COMPONENTS: AdminPanel, ReportGenerator
+DESCRIPTION: Updated admin dashboard UI with new charts and improved navigation. Cosmetic changes only.
+
+MODULE: Documentation
+IMPACT: LOW
+COMPONENTS: HelpPages, FAQs
+DESCRIPTION: Updated user documentation and help pages. No code changes.

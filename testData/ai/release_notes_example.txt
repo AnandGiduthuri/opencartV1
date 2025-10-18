@@ -1,0 +1,89 @@
+# Release Notes File
+# This file is used by the AI Test Scenario Generator to create test scenarios
+# Format:
+# VERSION: <version number>
+# DATE: <release date>
+# TYPE: NEW_FEATURE|BUG_FIX|ENHANCEMENT|SECURITY_FIX|PERFORMANCE_IMPROVEMENT|DEPRECATION|BREAKING_CHANGE
+# TITLE: <short title>
+# DESCRIPTION: <detailed description>
+# MODULES: <comma-separated list of affected modules>
+# --- (separator between entries)
+
+VERSION: 2.1.0
+DATE: 2025-10-15
+TYPE: BREAKING_CHANGE
+TITLE: Migration to OAuth2.0 Authentication
+DESCRIPTION: Complete overhaul of authentication system. Legacy session-based authentication has been replaced with OAuth2.0. All API clients must update their integration.
+MODULES: Authentication, LoginPage, APIGateway
+---
+
+VERSION: 2.1.0
+DATE: 2025-10-15
+TYPE: SECURITY_FIX
+TITLE: Critical Email Verification Bypass Fixed
+DESCRIPTION: Fixed a critical security vulnerability where unverified email addresses could bypass the verification process and gain unauthorized access.
+MODULES: AccountRegistration, EmailService, SecurityModule
+---
+
+VERSION: 2.1.0
+DATE: 2025-10-15
+TYPE: NEW_FEATURE
+TITLE: AI-Powered Product Recommendations
+DESCRIPTION: Introduced machine learning-based product recommendation engine that provides personalized suggestions based on user behavior and purchase history.
+MODULES: ProductSearch, RecommendationEngine, UserProfile
+---
+
+VERSION: 2.1.0
+DATE: 2025-10-15
+TYPE: NEW_FEATURE
+TITLE: Bulk Discount and Promotional Codes
+DESCRIPTION: Added support for bulk purchase discounts and promotional code redemption in the shopping cart with complex pricing rules.
+MODULES: ShoppingCart, PriceCalculator, PromotionEngine
+---
+
+VERSION: 2.1.0
+DATE: 2025-10-15
+TYPE: BUG_FIX
+TITLE: Fixed Cart Total Calculation Error
+DESCRIPTION: Resolved an issue where cart totals were incorrectly calculated when multiple promotional codes were applied simultaneously.
+MODULES: ShoppingCart, PriceCalculator
+---
+
+VERSION: 2.1.0
+DATE: 2025-10-15
+TYPE: ENHANCEMENT
+TITLE: Added PayPal and Stripe Payment Options
+DESCRIPTION: Integrated PayPal and Stripe as additional payment gateways, providing customers with more payment flexibility.
+MODULES: OrderProcessing, PaymentGateway, CheckoutPage
+---
+
+VERSION: 2.1.0
+DATE: 2025-10-15
+TYPE: ENHANCEMENT
+TITLE: Customizable User Dashboard
+DESCRIPTION: Users can now customize their dashboard layout, choose which widgets to display, and set notification preferences.
+MODULES: UserProfile, Dashboard, NotificationManager
+---
+
+VERSION: 2.1.0
+DATE: 2025-10-15
+TYPE: PERFORMANCE_IMPROVEMENT
+TITLE: Optimized Database Queries for Product Search
+DESCRIPTION: Implemented caching and query optimization for product search, resulting in 60% faster search response times.
+MODULES: ProductSearch, DatabaseLayer, CacheManager
+---
+
+VERSION: 2.0.9
+DATE: 2025-10-01
+TYPE: BUG_FIX
+TITLE: Fixed Session Timeout Issue
+DESCRIPTION: Corrected a bug where user sessions were expiring prematurely, causing unexpected logouts.
+MODULES: SessionManager, Authentication
+---
+
+VERSION: 2.0.9
+DATE: 2025-10-01
+TYPE: DEPRECATION
+TITLE: Deprecated Legacy API Endpoints
+DESCRIPTION: Marked several legacy API endpoints as deprecated. They will be removed in version 3.0.0. Migration guide available in documentation.
+MODULES: APIGateway, Documentation

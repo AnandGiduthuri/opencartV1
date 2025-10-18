@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AI-Generated Regression Test Suite" verbose="1">
+    
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+    
+    <!-- Run only AI-recommended regression tests -->
+    <groups>
+        <run>
+            <include name="regression"/>
+        </run>
+    </groups>
+    
+    <test thread-count="5" name="Regression Tests - Comprehensive Coverage" parallel="methods">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="os" value="Windows"/>
+        
+        <classes>
+            <!-- Existing tests with regression groups -->
+            <class name="testCases.AccountCreationTest"/>
+            <class name="testCases.LoginwithPropertiesTest"/>
+            
+            <!-- AI-generated test scenarios -->
+            <class name="testCases.AIGeneratedTestsExample">
+                <methods>
+                    <!-- All regression tests from AI analysis -->
+                    <include name="testUserAuthenticationAfterOAuthMigration"/>
+                    <include name="testAccountRegistrationWithEmailVerification"/>
+                    <include name="testShoppingCartPromotionalCodes"/>
+                    <include name="testCartTotalCalculationWithMultiplePromoCodes"/>
+                    <include name="testProductSearchWithAIRecommendations"/>
+                    <include name="testNewPaymentGatewayIntegrations"/>
+                    <include name="testUserProfileCustomization"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>
