@@ -1,0 +1,28 @@
+# Build outputs
+target/
+test-output/
+
+# IDE files
+.classpath
+.project
+.settings/
+
+# Logs
+logs/
+*.log
+
+# Reports
+reports/
+
+# Screenshots
+screenshots/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS specific files
+.DS_Store
+Thumbs.db
